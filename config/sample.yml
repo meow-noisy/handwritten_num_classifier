@@ -1,0 +1,45 @@
+num_epochs: 20
+cuda: true
+output_data:
+
+data:
+  train:
+    dataset:
+      mnist_train:
+        dir: &dataset data/images
+        train_mode: true
+        transform: &transform
+          - Resize:
+            width: 32
+            height: 32
+          - Gray2BGR:
+          - Invert:
+          - ToTensor:
+    dataloader: &dataloader
+      batch_size: 64
+      shuffle: true
+  eval:
+    dataset:
+      mnist_eval:
+        dir: *dataset
+        train_mode: false
+        transform: *transform
+    dataloader: 
+      batch_size: 64
+      shuffle: false
+
+
+model:
+  model_name: alexnet
+  num_classes: 10
+  class_labels: ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
+  model_state_dict: 
+
+loss:
+  loss_name: cross_entropy_loss
+
+optimizer:
+  optimizer_name: sgd
+  lr: 0.01
+  momentum: 0.9
+  weight_decay: 0.0005
