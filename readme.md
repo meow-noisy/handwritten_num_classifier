@@ -1,6 +1,6 @@
 # 手書き数字認識のバッチ
 
-「[PyTorchニューラルネットワーク実装ハンドブック](www.amazon.co.jp/dp/4798055476)」の[4.1節 AlexNetで画像分類するタスク](https://github.com/miyamotok0105/pytorch_handbook/blob/master/chapter4/section4_1.ipynb)をバッチ化したプロジェクトです。
+「[PyTorchニューラルネットワーク実装ハンドブック](https://www.amazon.co.jp/dp/4798055476)」の[4.1節 AlexNetで画像分類するタスク](https://github.com/miyamotok0105/pytorch_handbook/blob/master/chapter4/section4_1.ipynb)をバッチ化したプロジェクトです。
 
 ## インストール
 1. `$ pip install -r requirements.txt`
