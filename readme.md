@@ -6,7 +6,7 @@
 1. `$ pip install -r requirements.txt`
 
 ## コマンドライン実行方法
-1. `$ python <config_file> <working_root>`
+1. `$ python handwritten_num_classifier/train_model.py  <config_file> <working_root>`
     - config_file: コンフィグ用のyamlファイル
     - working_root: どこを起点としてデータを参照するか
 
