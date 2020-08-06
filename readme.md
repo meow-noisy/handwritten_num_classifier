@@ -1,16 +1,18 @@
-# 手書き数字認識
+# 手書き数字認識のバッチ
 
-手書き数字を分類するプロジェクトです。
+「[PyTorchニューラルネットワーク実装ハンドブック](www.amazon.co.jp/dp/4798055476)」の[4.1節 AlexNetで画像分類するタスク](https://github.com/miyamotok0105/pytorch_handbook/blob/master/chapter4/section4_1.ipynb)をバッチ化したプロジェクトです。
 
 ## インストール
 1. `$ pip install -r requirements.txt`
 
-## 実行方法
+## コマンドライン実行方法
 1. `$ python <config_file> <working_root>`
     - config_file: コンフィグ用のyamlファイル
     - working_root: どこを起点としてデータを参照するか
 
 ## コンフィグファイルのフォーマット
+
+`./config/sample.yml`にサンプルを置いています。
 
 ```yaml
 # 学習エポック数

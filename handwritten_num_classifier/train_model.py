@@ -25,6 +25,12 @@ from output_data.data_saver import DataSaver
 
 def train(config_yml, 
           working_root=str(this_file_dir / '..')):
+    """画像分類モデルを学習するエンドポイント
+
+    Args:
+        config_yml (str): コンフィグ用のyamlファイル
+        working_root (str, optional): どこを起点としてデータを参照するか. Defaults to str(this_file_dir / '..').
+    """
 
     with open(config_yml, 'r') as f:
         config = yaml.safe_load(f)
